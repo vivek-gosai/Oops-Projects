@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h3 id="fname"></h3>
+    <h4 id="fage"></h4>
+
+    <h3 id="cname"></h3>
+    <h4 id="cage"></h4>
+    <script>
+        class person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            fatherinfo() {
+                document.getElementById("fname").innerHTML = (`father name : ${this.name}`);
+                document.getElementById("fage").innerHTML = (`age : ${this.age}`);
+            }
+            childinfo() {
+                document.getElementById("cname").innerHTML = (`child name : ${this.name}`);
+                document.getElementById("cage").innerHTML = (`age : ${this.age}`);
+            }
+
+        }
+        const father = new person("gulabbharthi", 55);
+        father.fatherinfo();
+
+        const child = new person("vivek", 12);
+        child.childinfo();
+    </script>
+</body>
+
+</html>

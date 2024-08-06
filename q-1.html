@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+            <tr>
+                <th>student</th>
+                <th>faculty</th>
+                <th>peon</th>
+            </tr>
+        </thead>
+        <tr>
+            <td id="stu"></td>
+            <td id="fa"></td>
+            <td id="peo"></td>
+        </tr>
+    </table>
+
+    <script>
+        
+        // let name = document.getElementById("nam");
+        // let mail = document.getElementById("mail");
+        // let contact = document.getElementById("contact");
+
+        class school {
+            
+            student(name,mail,contact){
+
+                document.getElementById("stu").innerHTML += "name :- " + name + "</br>";
+                document.getElementById("stu").innerHTML += "email :- " +  mail + "</br>";
+                document.getElementById("stu").innerHTML += "contact :- " + contact;
+            }
+
+            faculty(name,mail,contact){
+                document.getElementById("fa").innerHTML += "faculty name :- " + name +"</br>";
+                document.getElementById("fa").innerHTML += "email :-" + mail +"</br>";
+                document.getElementById("fa").innerHTML += "contact :-" +contact;
+                
+            }
+
+            peon(name,mail,contact){
+
+                document.getElementById("peo").innerHTML+= "peon name :" + name + "</br>";
+                document.getElementById("peo").innerHTML += "email :-" + mail +"</br>";
+                document.getElementById("peo").innerHTML += "contact :-" + contact;
+            }
+
+        }
+
+        let a = new school();
+        a.student("vivek","vivek7665@gmail.com","658455695");
+        a.faculty("keyur gohil","kggohil@gmail.com","678905483");  
+        a.peon("rmakaka","rmakaka@gmail.com","8904535628");
+
+
+    </script>
+</body>
+</html>
